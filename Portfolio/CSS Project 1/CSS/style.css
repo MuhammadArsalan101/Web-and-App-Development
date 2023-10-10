@@ -67,8 +67,8 @@
 #home {
     display: flex;
     flex-direction: column;
+    height: 400px;
     padding: 3px 200px;
-    height: 300px;
     justify-content: center;
     align-items: center;
 }
@@ -81,4 +81,21 @@
     width: 100%;
     z-index: -1;
     opacity: 0.89;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
 }

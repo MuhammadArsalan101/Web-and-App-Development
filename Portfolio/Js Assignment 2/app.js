@@ -119,11 +119,17 @@
 // console.log(Table + " x 10 = "+ Table*10);
 
 // Chapter # 6.6
-var SubjectName1=prompt("Enter First Subject Name");
-var SubjectName2=prompt("Enter Second Subject Name");
-var SubjectName3=prompt("Enter Third Subject Name");
+var SubjectName1=prompt("Enter First Subject Name","English");
+var SubjectName2=prompt("Enter Second Subject Name","Maths");
+var SubjectName3=prompt("Enter Third Subject Name","Biology");
 var TotalMarks = 100;
-var obtainedMarksSubject1= prompt("Enter obtained marks of "+SubjectName1);
-var obtainedMarksSubject2= prompt("Enter obtained marks of "+SubjectName2);
-var obtainedMarksSubject3= prompt("Enter obtained marks of "+SubjectName3);
-document.write("Subject Name "+"Total Marks "+"" )
+var obtainedMarksSubject1= prompt("Enter obtained marks of "+SubjectName1,50);
+var obtainedMarksSubject2= prompt("Enter obtained marks of "+SubjectName2,60);
+var obtainedMarksSubject3= prompt("Enter obtained marks of "+SubjectName3,70);
+var totalObtained=obtainedMarksSubject3+obtainedMarksSubject2+obtainedMarksSubject1;
+var totalPercentage=(totalObtained/(TotalMarks*3)*100)
+document.write("<h3>Subject Name   "+" Total Marks   "+" Obtained Marks   "+" Percentage </h3>");
+document.write("</br>"+SubjectName2+"      "+TotalMarks+"      "+obtainedMarksSubject2+"      "+(obtainedMarksSubject2/TotalMarks)*100+"%");
+document.write("</br>"+SubjectName1+"      "+TotalMarks+"      "+obtainedMarksSubject1+"      "+(obtainedMarksSubject1/TotalMarks)*100+"%");
+document.write("</br>"+SubjectName3+"      "+TotalMarks+"      "+obtainedMarksSubject3+"      "+(obtainedMarksSubject3/TotalMarks)*100+"%");
+document.write("</br>"+"  _________    "+TotalMarks+" _______     "+totalObtained+" ______     "+totalPercentage+"%");
